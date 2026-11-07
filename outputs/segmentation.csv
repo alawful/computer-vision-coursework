@@ -1,0 +1,5 @@
+﻿version,pixels,iou_to_original
+Original,144136,1.0
+Dark (V x 0.3),2352,0.01524024700427614
+Equalization on V,42116,0.2814123248181962
+Stretching on V,148846,0.9683565564408853

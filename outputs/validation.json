@@ -1,0 +1,14 @@
+{
+  "executed_code_cells": 8,
+  "notebook_errors": 0,
+  "figures": 20,
+  "report_pages_visually_checked": 18,
+  "manual_opencv_max_error": 0,
+  "video_frames_each": 450,
+  "fps": 30,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "notebook_results_match_saved_results": true
+}

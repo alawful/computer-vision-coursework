@@ -1,0 +1,13 @@
+﻿input,filter,mae,max_error
+Salt-pepper,Mean,0.0,0.0
+Salt-pepper,Gaussian,0.0,0.0
+Salt-pepper,Median,0.0,0.0
+Gaussian,Mean,0.0,0.0
+Gaussian,Gaussian,0.0,0.0
+Gaussian,Median,0.0,0.0
+original,Sobel,0.0,0.0
+original,Laplacian,0.0,0.0
+noisy,Sobel,0.0,0.0
+noisy,Laplacian,0.0,0.0
+restored,Sobel,0.0,0.0
+restored,Laplacian,0.0,0.0

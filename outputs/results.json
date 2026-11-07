@@ -1,0 +1,257 @@
+{
+  "part1": {
+    "image": {
+      "shape": [
+        1024,
+        1536,
+        3
+      ],
+      "dtype": "uint8",
+      "minimum": 0,
+      "maximum": 255,
+      "channels": 3
+    },
+    "threshold": 116.0,
+    "contrast": [
+      48.591180980101235,
+      70.65064286447314,
+      24.297139225087335
+    ],
+    "hsv_lower": [
+      35,
+      65,
+      60
+    ],
+    "hsv_upper": [
+      85,
+      255,
+      255
+    ],
+    "segmentation": [
+      {
+        "version": "Original",
+        "pixels": 144136,
+        "iou_to_original": 1.0
+      },
+      {
+        "version": "Dark (V x 0.3)",
+        "pixels": 2352,
+        "iou_to_original": 0.01524024700427614
+      },
+      {
+        "version": "Equalization on V",
+        "pixels": 42116,
+        "iou_to_original": 0.2814123248181962
+      },
+      {
+        "version": "Stretching on V",
+        "pixels": 148846,
+        "iou_to_original": 0.9683565564408853
+      }
+    ]
+  },
+  "part2": {
+    "raw": {
+      "shape": [
+        2048,
+        2048,
+        3
+      ],
+      "dtype": "uint8",
+      "minimum": 23,
+      "maximum": 248,
+      "channels": 3
+    },
+    "gray": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "dtype": "uint8",
+      "minimum": 30,
+      "maximum": 248,
+      "channels": 1
+    },
+    "psnr": [
+      {
+        "noise": "Salt-pepper",
+        "method": "Noisy",
+        "manual_psnr": 16.350077151780575,
+        "opencv_psnr": 16.350077151780575
+      },
+      {
+        "noise": "Salt-pepper",
+        "method": "Mean",
+        "manual_psnr": 23.77392150717904,
+        "opencv_psnr": 23.77392150717904
+      },
+      {
+        "noise": "Salt-pepper",
+        "method": "Gaussian",
+        "manual_psnr": 24.637860563735543,
+        "opencv_psnr": 24.637860563735543
+      },
+      {
+        "noise": "Salt-pepper",
+        "method": "Median",
+        "manual_psnr": 36.536357507620345,
+        "opencv_psnr": 36.536357507620345
+      },
+      {
+        "noise": "Gaussian",
+        "method": "Noisy",
+        "manual_psnr": 24.435154296807127,
+        "opencv_psnr": 24.435154296807127
+      },
+      {
+        "noise": "Gaussian",
+        "method": "Mean",
+        "manual_psnr": 27.604144185123825,
+        "opencv_psnr": 27.604144185123825
+      },
+      {
+        "noise": "Gaussian",
+        "method": "Gaussian",
+        "manual_psnr": 27.992305596616518,
+        "opencv_psnr": 27.992305596616518
+      },
+      {
+        "noise": "Gaussian",
+        "method": "Median",
+        "manual_psnr": 30.156833579694332,
+        "opencv_psnr": 30.156833579694332
+      }
+    ],
+    "differences": [
+      {
+        "input": "Salt-pepper",
+        "filter": "Mean",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "Salt-pepper",
+        "filter": "Gaussian",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "Salt-pepper",
+        "filter": "Median",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "Gaussian",
+        "filter": "Mean",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "Gaussian",
+        "filter": "Gaussian",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "Gaussian",
+        "filter": "Median",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "original",
+        "filter": "Sobel",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "original",
+        "filter": "Laplacian",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "noisy",
+        "filter": "Sobel",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "noisy",
+        "filter": "Laplacian",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "restored",
+        "filter": "Sobel",
+        "mae": 0.0,
+        "max_error": 0.0
+      },
+      {
+        "input": "restored",
+        "filter": "Laplacian",
+        "mae": 0.0,
+        "max_error": 0.0
+      }
+    ]
+  },
+  "part3": {
+    "input": {
+      "width": 1280,
+      "height": 720,
+      "fps": 30.0,
+      "frames": 450,
+      "duration": 15.0
+    },
+    "outputs": {
+      "noisy_video.mp4": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30.0,
+        "frames": 450,
+        "duration": 15.0,
+        "decoded_frames": 450
+      },
+      "filtered_video_1.mp4": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30.0,
+        "frames": 450,
+        "duration": 15.0,
+        "decoded_frames": 450
+      },
+      "filtered_video_2.mp4": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30.0,
+        "frames": 450,
+        "duration": 15.0,
+        "decoded_frames": 450
+      }
+    },
+    "samples": [
+      {
+        "frame": 0,
+        "noisy_psnr": 17.545515940129228,
+        "median_psnr": 24.608282563550535,
+        "gaussian_psnr": 22.13928943912595
+      },
+      {
+        "frame": 225,
+        "noisy_psnr": 17.58380749234479,
+        "median_psnr": 25.96972345185684,
+        "gaussian_psnr": 22.98777854650762
+      },
+      {
+        "frame": 449,
+        "noisy_psnr": 17.778277602272784,
+        "median_psnr": 25.813433763219432,
+        "gaussian_psnr": 23.053168522122178
+      }
+    ],
+    "noise_density": 0.05,
+    "audio": "Outputs contain video only"
+  }
+}
